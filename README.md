@@ -1,6 +1,6 @@
 # Home Lab
 
-A growing lab for Linux administration, networking, automation, and cloud security.
+- **[Home lab](https://github.com/asettles/home-lab):** Ubuntu Server administration, SSH access, firewall configuration, and Linux troubleshooting.
 
 ## Current Environment
 - Windows host with VirtualBox
