@@ -32,6 +32,7 @@ Build a Linux server for administration, networking, and future automation proje
 ## Updates and Baseline
 
 Verified the hostname and operating system:
+
 <img width="642" height="810" alt="ChatGPT Image Nov 5, 2026, 01_15_01 AM" src="https://github.com/user-attachments/assets/3fb81e28-a1f7-4008-8882-d31e39ff83e5" />
 
 ```bash
@@ -74,6 +75,7 @@ sudo ufw status verbose
 ```
 
 UFW was active and SSH was allowed for IPv4 and IPv6.
+
 <img width="1150" height="551" alt="ufw status verbose" src="https://github.com/user-attachments/assets/a7e0ff97-de00-4b10-9401-c705154e6f9b" />
 
 ## Remote Access
@@ -93,6 +95,7 @@ ssh andrew@<VM-IP>
 ```
 
 Successfully authenticated and reached the Ubuntu shell from Windows.
+
 <img width="1619" height="972" alt="ssh-login-redacted png" src="https://github.com/user-attachments/assets/8462e070-f8d9-43b5-9a7c-9091fc90ac04" />
 
 
