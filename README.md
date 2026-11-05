@@ -15,7 +15,9 @@
 - Enabled UFW with incoming traffic denied by default
 - Allowed SSH on TCP port 22
 - Practiced basic file navigation and permissions
-
+## Documentation
+- [Ubuntu Server Setup](docs/ubuntu-server-setup.md)
+  
 ## Next Steps
 - Practice users, groups, processes, and services
 - Deploy and troubleshoot a web service
