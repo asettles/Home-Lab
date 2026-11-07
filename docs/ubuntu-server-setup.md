@@ -130,3 +130,12 @@ Confirmed permissions changed to `-rw-------`.
 - Deploy a web service.
 - Introduce a controlled failure and document troubleshooting.
 - Use Git locally to track documentation changes.
+
+
+## Nginx Outage and Recovery
+
+I installed Nginx on my Ubuntu VM and verified it returned `200 OK` with `curl -I http://localhost`. The browser on my Windows host still timed out. I added a UFW rule allowing TCP port 80 from my Windows host’s IP address, then confirmed the Nginx welcome page loaded.
+
+I stopped Nginx to simulate an outage. The local `curl` request failed, `systemctl status nginx` showed the service was inactive, and `ss` showed nothing listening on port 80.
+
+I started Nginx again and verified recovery from both Ubuntu and Windows. The local request returned `200 OK`, and the welcome page loaded from Windows. The system journal showed **3 minutes and 26 seconds** between the stop and start events.
